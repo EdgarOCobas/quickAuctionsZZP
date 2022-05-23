@@ -1,0 +1,114 @@
+:root {
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-third: 'Anonymous', monospace;
+    --ff-fourth: 'Source Sans Pro', sans-serif;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+
+    --fw-bold: 900;
+    --fw-reg: 400;
+    --fw-light: 300;
+
+    --clr-dark: #1B1C1E;
+    --clr-dark-rgba: rgba(0, 0, 0, 0.7);
+    --clr-r-dark: #000;
+    --clr-light: #fff;
+    --clr-accent: #B33737;
+    --clr-accent2: #00d4ff;
+    --clr-accent2-rgba: rgb(0, 212, 255, 0.3);
+    --clr-accent3: #BDAE13;
+    --clr-accent4: #f79817;
+}
+
+
+.loginPage {
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /*background: url("../../assets/images/login_banner.jpeg");*/
+}
+
+.login-form {
+    background: var(--clr-dark-rgba);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+    max-height: 620px;
+}
+
+.login-label {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #FFF;
+}
+
+.login-form form {
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    display: block;
+    margin: 20px 0 10px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #D3D3D3;
+}
+
+.login-form p a {
+    transition: all 0.3s ease;
+}
+
+p {
+    margin-bottom: 80px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.login-form>* {
+    padding: 0 40px;
+}
+
+.login-form button {
+    margin-top: 40px;
+    background: var(--clr-accent2);
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 212, 255, 0.3);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+    line-height: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-form .error {
+    color: red;
+    margin: -5px 0 10px;
+}
